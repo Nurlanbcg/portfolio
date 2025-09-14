@@ -57,9 +57,14 @@ export default function Navigation() {
     }`}>
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
-          <div className="font-bold text-xl">
-            Nurlan İbrahimov 
-          </div>
+          
+          {/* Logo */}
+          <button
+            onClick={() => scrollToSection('#hero')}
+            className="font-bold text-xl hover:text-primary transition-colors"
+          >
+            Nİ
+          </button>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">

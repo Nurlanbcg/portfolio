@@ -47,10 +47,15 @@ export default function HeroSection() {
           {/* CTA Buttons */}
           <div className={`mb-12 transition-all duration-1000 delay-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <a
+                href="/Nurlan İbrahimov CV ENG.pdf" // path to your CV inside public/
+                download // forces browser to download instead of opening
+                className="group">
               <Button size="lg" className="group">
                 <Download className="mr-2 h-5 w-5 group-hover:animate-bounce" />
                 Download CV
               </Button>
+              </a>
               <Button 
                 size="lg" 
                 variant="outline"
